@@ -1,8 +1,6 @@
 #!/bin/bash
 # ---------------------------------------------------------------------------
 # nginxcompile-boringssl.sh - Compile nginx with boringssl.
-
-# By i81b4u.
   
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,15 +14,12 @@
 # more details.
 
 # Usage: nginxcompile-boringssl.sh [-h|--help]
-
-# Revision history:
-# 2020-10-01 Initial release.
-# 2023-03-19 Updated so recent versions of boringssl can be used
 # ---------------------------------------------------------------------------
+# The result nginx folder will be placed at /opt/nginx, change the --prefix down here as you wish.
 
 PROGNAME=${0##*/}
 VERSION="1.0.2"
-NGINXBUILDPATH="/home/harrylee/Desktop/mmh/tmp/build"
+NGINXBUILDPATH="/home/harrylee/Desktop/mmh/tmp/build" # use your path
 
 clean_up() { # Perform pre-exit housekeeping
   return
